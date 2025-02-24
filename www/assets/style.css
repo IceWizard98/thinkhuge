@@ -31,6 +31,12 @@ body {
   padding: 2rem 1rem;
 }
 
+.logout-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 /* Typography */
 .page-title {
   font-size: 1.875rem;

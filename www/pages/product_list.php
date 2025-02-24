@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/assets/style.css">
   </head>
   <body class="dark-bg">
+    <div class="logout-container">
+      <a href="/logout/" class="btn btn-secondary">Logout</a>
+    </div>
     <div class="container-lg">
       <h1 class="page-title">FOREX VPS <span class="text-accent">PRODUCTS</span></h1>
       <p class="page-subtitle">Manage your VPS plans</p>

@@ -14,8 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forex VPS Admin - Add Product</title>
     <link rel="stylesheet" href="/assets/style.css">
-  </head>
+    </head>
   <body>
+    <div class="logout-container">
+      <a href="/logout/" class="btn btn-secondary">Logout</a>
+    </div>
     <div class="container">
       <h1 class="page-title">
         <?= htmlspecialchars(ucfirst($action)) ?> NEW <span class="text-accent">PRODUCT</span>
