@@ -25,8 +25,8 @@
     $memory_type     = strtoupper($_POST['disk_type']);
     $os              = trim($_POST['os']);
     $icon            = trim($_POST['icon']);
-    $is_dedicated_ip = isset($_POST['dedicated_ip']) ? 1 : 0;
-    $is_suggested    = isset($_POST['suggested_product']) ? 1 : 0;
+    $is_dedicated_ip = isset($_POST['is_dedicated_ip']) ? 1 : 0;
+    $is_suggested    = isset($_POST['is_suggested']) ? 1 : 0;
     $price           = filter_var($_POST['price'], FILTER_VALIDATE_FLOAT);
     $discount        = filter_var($_POST['discount'], FILTER_VALIDATE_FLOAT);
   

@@ -94,11 +94,11 @@
             </div>
             <div class="flex gap-4">
               <label class="flex items-center">
-                <input type="checkbox" name="dedicated_ip" value="1" class="form-checkbox" <?= (!empty($product['dedicated_ip'])) ? 'checked' : '' ?>>
+                <input type="checkbox" name="is_dedicated_ip" value="1" class="form-checkbox" <?= (!empty($product['is_dedicated_ip'])) ? 'checked' : '' ?>>
                 <span class="form-check-label">Dedicated IP Address</span>
               </label>
               <label class="flex items-center">
-                <input type="checkbox" name="suggested_product" value="1" class="form-checkbox" <?= (!empty($product['suggested_product'])) ? 'checked' : '' ?>>
+                <input type="checkbox" name="is_suggested" value="1" class="form-checkbox" <?= (!empty($product['is_suggested'])) ? 'checked' : '' ?>>
                 <span class="form-check-label">Suggested Product</span>
               </label>
             </div>
