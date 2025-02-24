@@ -18,7 +18,7 @@
       <a href="/logout/" class="btn btn-secondary">Logout</a>
     </div>
     <div class="container-lg">
-      <h1 class="page-title">FOREX VPS <span class="text-accent">PRODUCTS</span></h1>
+      <a style="text-decoration: none;" href="/"><h1 class="page-title">FOREX VPS <span class="text-accent">PRODUCTS</span></h1></a>
       <p class="page-subtitle">Manage your VPS plans</p>
       <div class="mt-8">
         <div class="space-y-4">

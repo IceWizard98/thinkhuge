@@ -20,9 +20,11 @@
       <a href="/logout/" class="btn btn-secondary">Logout</a>
     </div>
     <div class="container">
-      <h1 class="page-title">
-        <?= htmlspecialchars(ucfirst($action)) ?> NEW <span class="text-accent">PRODUCT</span>
-      </h1>
+      <a style="text-decoration: none;" href="/">
+        <h1 class="page-title">
+          <?= htmlspecialchars(ucfirst($action)) ?> NEW <span class="text-accent">PRODUCT</span>
+        </h1>
+      </a>
       <p class="page-subtitle">Create a new VPS plan</p>
       <div class="mt-8">
         <form method="POST" action="/product/<?= htmlspecialchars($action) ?: 'add' ?>/" class="card">
