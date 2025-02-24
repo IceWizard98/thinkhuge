@@ -1,0 +1,444 @@
+/* Reset & Base */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Layout */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container-sm {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container-md {
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container-lg {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Typography */
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  color: #9ca3af;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.text-accent {
+  color: #4DE350;
+}
+
+.text-gray {
+  color: #9ca3af;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Colors & Background */
+.dark-bg {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.card-bg {
+  background-color: #202020;
+}
+
+.input-bg {
+  background-color: #303030;
+}
+
+/* Cards & Containers */
+.card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #202020;
+}
+
+.card-highlight {
+  background-color: rgba(77, 227, 80, 0.15);
+  border: 2px solid #4DE350;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-card {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-features {
+  margin: 1rem 0;
+}
+
+.product-price {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .product-card {
+    min-width: 280px;
+    scroll-snap-align: center;
+  }
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: #303030;
+  border: 1px solid #404040;
+  border-radius: 0.375rem;
+  color: #ffffff;
+box-sizing: border-box;
+}
+
+.form-input:focus {
+outline: none;
+border-color: #4DE350;
+box-shadow: 0 0 0 2px rgba(77, 227, 80, 0.2);
+}
+
+.form-checkbox {
+margin-right: 0.5rem;
+accent-color: #4DE350;
+}
+
+.form-check-label {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.form-radio {
+margin-right: 0.5rem;
+accent-color: #4DE350;
+}
+
+.form-actions {
+margin-top: 1.5rem;
+display: flex;
+justify-content: flex-end;
+gap: 0.75rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4DE350;
+  box-shadow: 0 0 0 2px rgba(77, 227, 80, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: rgba(77, 227, 80, 0.15);
+  border: 1px solid #4DE350;
+  color: #4DE350;
+}
+
+.btn-primary:hover {
+  background-color: rgba(77, 227, 80, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #9ca3af;
+  color: #9ca3af;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(156, 163, 175, 0.1);
+}
+
+.btn-danger {
+  background-color: rgba(255, 0, 0, 0.15);
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.btn-danger:hover {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.btn-edit {
+  background-color: rgba(0, 0, 255, 0.15);
+  border: 1px solid #0000ff;
+  color: #0000ff;
+}
+
+.btn-edit:hover {
+  background-color: rgba(0, 0, 255, 0.25);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Layout Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+  
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Spacing */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+/* Price & Discount Tags */
+.price-tag {
+  background-color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.price-current {
+  color: #4DE350;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.discount-badge {
+  background-color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.feature-list li {
+  margin: 0.5rem 0;
+}
+
+.feature-highlight {
+  color: #4DE350;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+  
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+/* Utils */
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Layout & Spacing */
+.vps-grid-gap {
+  gap: 1rem;
+}
+
+.vps-space-y {
+  margin-top: 1rem;
+}
+
+.vps-space-x {
+  margin-left: 0.5rem;
+}
+
+/* Colors */
+.vps-bg-card {
+  background-color: #202020;
+}
+
+.vps-bg-input {
+  background-color: #303030;
+}
+
+.vps-bg-highlight {
+  background-color: #4BE54D26;
+}
+
+.vps-text-highlight {
+  color: #4DE350;
+}
+
+/* Borders */
+.vps-border-highlight {
+  border-color: #4DE350;
+}
+
+/* Hover Effects */
+.vps-hover-highlight:hover {
+  background-color: #4BE54D40;
+}
+
